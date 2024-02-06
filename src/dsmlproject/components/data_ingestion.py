@@ -26,8 +26,8 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             ## Reading the data from MySQL
-            df=read_sql_data()
-            # df=pd.read_csv(os.path.join('C:\\Users\\alokk\\Python\\DSML\\notebook\\data\\raw.csv'))
+            # df=read_sql_data()
+            df=pd.read_csv(os.path.join("D:\\raw.csv"))
             logging.info("Reading completed MySQl database")
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
