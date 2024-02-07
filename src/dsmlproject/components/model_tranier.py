@@ -125,7 +125,7 @@ class ModelTrainer:
             #ML flow
 
 
-            # mlflow.set_registry_uri("https://dagshub.com/krishnaik06/mlprojecthindi.mlflow")
+            mlflow.set_registry_uri("https://dagshub.com/alokchoudhary05/Data-Science-with-ML-Project.mlflow")
             tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
             
