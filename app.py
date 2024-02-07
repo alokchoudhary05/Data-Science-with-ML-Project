@@ -4,7 +4,7 @@ from src.dsmlproject.components.data_ingestion import DataIngestion
 from src.dsmlproject.components.data_ingestion import DataIngestionConfig
 from src.dsmlproject.components.data_transformation import DataTransformationConfig
 from src.dsmlproject.components.data_transformation import DataTransformation
-# from src.dsmlproject.components.model_tranier import ModelTrainerConfig,ModelTrainer
+from src.dsmlproject.components.model_tranier import ModelTrainerConfig,ModelTrainer
 
 import sys
 
@@ -21,9 +21,9 @@ if __name__ == "__main__":
         data_transformation=DataTransformation()
         train_arr,test_arr,_=data_transformation.initiate_data_transormation(train_data_path,test_data_path)
 
-    #     #Model Training
-    #     model_trainer=ModelTrainer()
-    #     print(model_trainer.initiate_model_trainer(train_arr,test_arr))
+        #Model Training
+        model_trainer=ModelTrainer()
+        print(model_trainer.initiate_model_trainer(train_arr,test_arr))
 
 
     except Exception as e:

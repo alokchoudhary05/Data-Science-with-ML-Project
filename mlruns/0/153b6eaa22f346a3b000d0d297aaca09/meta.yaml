@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Data%20Science%20project/mlruns/0/153b6eaa22f346a3b000d0d297aaca09/artifacts
+end_time: 1707289194411
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 153b6eaa22f346a3b000d0d297aaca09
+run_name: sophisticated-roo-48
+run_uuid: 153b6eaa22f346a3b000d0d297aaca09
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707289189906
+status: 3
+tags: []
+user_id: root

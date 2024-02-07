@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Data%20Science%20project/mlruns/0/e5d42258236c4fcf95f492a7406707d7/artifacts
+end_time: 1707289142573
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e5d42258236c4fcf95f492a7406707d7
+run_name: honorable-owl-78
+run_uuid: e5d42258236c4fcf95f492a7406707d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1707289138289
+status: 3
+tags: []
+user_id: root
