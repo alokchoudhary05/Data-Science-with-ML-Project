@@ -1,17 +1,20 @@
 import os
 import sys
-from src.dsmlproject.exception import CustomException
-from src.dsmlproject.logger import logging
-import pandas as pd 
+
+import numpy as np
+import pandas as pd
+
+import dill
+import pickle
+
 from dotenv import load_dotenv
 import pymysql
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import r2_score
 
-import pickle
-import numpy as np
-
+from src.dsmlproject.exception import CustomException
+from src.dsmlproject.logger import logging
 load_dotenv()
 
 host=os.getenv("host")
@@ -84,4 +87,14 @@ def evaluate_models(X_train, y_train,X_test,y_test,models,param):
         return report
 
     except Exception as e:
+        raise CustomException(e, sys)
+
+def load_object(file_path):
+    try:
+        print("Loading object from:", file_path)
+        with open(file_path, 'rb') as file_obj:
+            return dill.load(file_obj)
+        
+    except Exception as e:
+        print("Error loading object:", e)
         raise CustomException(e, sys)
