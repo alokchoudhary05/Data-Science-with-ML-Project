@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Data%20Science%20project/mlruns/0/d94ff7e78c5f41cd9245edfa93208268/artifacts
+end_time: 1710580485957
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d94ff7e78c5f41cd9245edfa93208268
+run_name: skillful-whale-192
+run_uuid: d94ff7e78c5f41cd9245edfa93208268
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710580483652
+status: 3
+tags: []
+user_id: root
